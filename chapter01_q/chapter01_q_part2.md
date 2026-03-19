@@ -15,7 +15,7 @@ We present here the results from the Poisson problem example in the paper, Figur
 
 
 <figure>
-<img src="figures/paperII_figure.jpg" alt="Setup" width="600"/>
+<img src="figures/paperII_figure.jpg" alt="Setup and results" width="600"/>
 <figcaption>Figure 1. Results for the 2D Poisson problem, (a) the exact solution, (b) the exact data, (c) the observed noisy data (1% noise level), (d) the inferred log-conductivity field, (e) the inferred log-conductivity variance, and (f) the CI plot for the KL coefficients (blue vertical lines), the exact KL coefficients (orange circles), and the KL coefficients posterior-means (blue circles).
 </figcaption>
 </figure>

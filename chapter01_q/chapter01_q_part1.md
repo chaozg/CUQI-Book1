@@ -18,7 +18,7 @@ The link to the code for all examples in the paper is provided in the resources 
 </figure>
 
 <figure>
-<img src="figures/figure_setup_cuqipy.jpg" alt="Setup" width="600"/>
+<img src="figures/figure_results_cuqipy1.jpg" alt="results" width="600"/>
 <figcaption>Figure 2. Trace plots of posterior samples using different priors: an uninformative prior (Pr1) in combination with the Metropolis–Hastings and NUTS samplers, a strong prior for the density contrast  (Pr2) in combination with the NUTS sampler. The top row shows the 1D marginals of the posterior distributions with the prior and true parameter values marked with black vertical lines. Rows 2–4 show the chains of the samples and respective effective sample sizes that are computed for each chain.
 </figcaption>
 </figure>
