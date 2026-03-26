@@ -7,18 +7,13 @@ UM-Bridge is a software framework that provides a unified interface for connecti
 
 It allows seamless integration of models and UQ libraries, creating shareable containerized models and benchmarks, and scaling computations to supercomputers and cloud infrastructure with minimal effort. See Figure 1 for an illustration of the UM-Bridge framework.
 
-<figure>
-<img src="figures/umbridge.jpg" alt="figure" width="600"/>
-<figcaption>Figure 1. The UM-Bridge framework, a unified interface for connecting advanced models and simulations with UQ and optimization software. Image credit: the <a href="https://um-bridge-benchmarks.readthedocs.io/en/docs/">UM-Bridge documentation</a> and [@seelinger2025democratizing].
-</figcaption>
-</figure>
 
 ```{figure} figures/umbridge.jpg
-:label: myFigure
-:alt: myFigure
+:label: FigureUmBridge
+:alt: Figure UM-Bridge
 :width: 600px
 :align: center
-Figure 1. The UM-Bridge framework, a unified interface for connecting advanced models and simulations with UQ and optimization software. Image credit: the <a href="https://um-bridge-benchmarks.readthedocs.io/en/docs/">UM-Bridge documentation</a> and [@seelinger2025democratizing].
+The UM-Bridge framework, a unified interface for connecting advanced models and simulations with UQ and optimization software. Image credit: the <a href="https://um-bridge-benchmarks.readthedocs.io/en/docs/">UM-Bridge documentation</a> and [@seelinger2025democratizing].
 ```
 
 ## CUQIpy-UMBridge plugin
