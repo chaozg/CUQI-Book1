@@ -9,7 +9,7 @@ It allows seamless integration of models and UQ libraries, creating shareable co
 
 <figure>
 <img src="figures/umbridge.jpg" alt="figure" width="600"/>
-<figcaption>Figure 1. The UM-Bridge framework, a unified interface for connecting advanced models and simulations with UQ and optimization software. Image from the <a href="https://um-bridge-benchmarks.readthedocs.io/en/docs/">UM-Bridge documentation</a>.
+<figcaption>Figure 1. The UM-Bridge framework, a unified interface for connecting advanced models and simulations with UQ and optimization software. Image credit: the <a href="https://um-bridge-benchmarks.readthedocs.io/en/docs/">UM-Bridge documentation</a> and `cite`{seelinger2025democratizing}.
 </figcaption>
 </figure>
 
