@@ -22,7 +22,6 @@ At implementation, we make use of `cuqi.sampler.RegularizedLinearRTO` with the n
 
 We have demonstrated that in many cases our approach produces at least as good results as two existing virtual point-based methods in the literature, whilst being more efficient, especially for the more computationally demanding larger problems with an increasing number of virtual points. The proposed method is particularly useful for applications where monotonicity constraints are important, such as in optimization and decision-making problems.
 
-
 ## Resources
 - Paper: {cite}`Zhang2026efficient`
 - Paper code GitHub repository: https://github.com/CUQI-DTU/Paper-FMGP
