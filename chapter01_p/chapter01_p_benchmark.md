@@ -9,6 +9,8 @@ Standard benchmarks serve as a valuable tool for comparing and understanding the
 
 We first set up the benchmark problem and run different sampling methods with the following code:
  ```python
+import utilities 
+import benchmarksClass
 y = cuqi.distribution.Gaussian(mean=np.array([0, 0]), cov=1)
 target_banana = benchmarksClass.Banana()
 samples = utilities.MCMCComparison(
