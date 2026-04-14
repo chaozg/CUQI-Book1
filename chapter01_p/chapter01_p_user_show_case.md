@@ -4,7 +4,7 @@ The CUQIpy User Showcase repository is a dedicated space for collecting and shar
 
 The repository houses a wide variety of solved problems, demonstrating the flexibility of CUQIpy. Examples include 1D and 2D deblurring/deconvolution (utilizing Besov priors, implicit priors, and smoothed Laplace methods), fusion plasma tomography, super-resolution imaging, and physical system modeling like spring systems and inverse Robin boundary problems. Users have also contributed examples that showcase advanced techniques such as plug-and-play priors (combining neural network denoisers with Bayesian inference), delayed acceptance with ODEs, high-dimensional Laplace dimension reduction, and creating custom forward models and samplers.
 
-The CUQIpy maintainer team highly encourages new submissions and a detailed instruction on how to contribute is available from the GitHub repository.
+The CUQIpy developer team highly encourages new submissions and a detailed instruction on how to contribute is available at GitHub repository.
 
 ## Resources
 - User-Showcase GitHub repository: https://github.com/CUQI-DTU/CUQIpy-User-Showcase
