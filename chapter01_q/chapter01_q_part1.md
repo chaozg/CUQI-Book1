@@ -1,6 +1,6 @@
-# CUQIpy – I. Computational uncertainty quantification for inverse problems in Python
+# 1. CUQIpy – I. Computational uncertainty quantification for inverse problems in Python
 
-## Summary
+## 1.1. Summary
 
 We published a two-part series introducing CUQIpy to the inverse problems research community, {cite}`Riis_2024` and {cite}`Alghamdi_2024`. The first focuses on the general framework of CUQIpy, with many examples of its use for general inverse problems, while the second focuses on the framework and applications of CUQIpy for PDE-based inverse problems.
 
@@ -24,6 +24,6 @@ The link to the code for all examples in the paper is provided in the resources 
 </figure>
 
 
-## Resources
+## 1.2. Resources
 - Paper: {cite}`Riis_2024`
 - Paper code GitHub repository: https://github.com/CUQI-DTU/Paper-CUQIpy-1-Core

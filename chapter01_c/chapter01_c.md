@@ -1,9 +1,7 @@
-# Chapter 3: Distributions, random variables, and priors in CUQIpy
+# Chapter 4: Distributions, random variables, and priors in CUQIpy
 
+⚠️ **add intro paragraph here**
 
-
-## <font color=#CD853F> Learning objectives: </font> <a name="r-learning-objectives"></a>
-By the end of this chapter, you will be able to:
 
 
 

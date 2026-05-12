@@ -1,7 +1,3 @@
-# ⚠️ Chapter 9: Samping with CUQIpy-PyTorch
+# Chapter 10: Sampling with CUQIpy-PyTorch
 
 > ⚠️ **Contents to be added:** Add intro to the chapter.
-
-## <font color=#CD853F> Learning objectives: </font> <a name="r-learning-objectives"></a>
-
-> ⚠️ **Contents to be added:** Add learning objectives for the chapter.

@@ -1,8 +1,8 @@
 version: 1
 project:
   title: Uncertainty Quantification in Inverse Problems with CUQIpy
-  authors:
-    - name: CUQIpy developer team
+  #authors:
+  #  - name: CUQIpy developer team
   github: CUQI-DTU/CUQI-Book
   thebe:
     binder:
@@ -11,10 +11,13 @@ project:
       ref: master
   bibliography:
     - references.bib
+  numbering: false
   exports:
     - format: pdf
-      template: plain_latex_book
+      template: _templates/plain_latex_nonumbered
       output: exports/book.pdf
+      options:
+        logo: false
   toc:
     - file: intro.md
     - title: "Part I: Foundations of CUQIpy and Bayesian Inverse Problems"
@@ -32,7 +35,6 @@ project:
             - file: chapter01/run_mini_book.md
         - file: chapter01_b/chapter01_b.md #ch2
           children:
-            - file: chapter01_b/chapter01_b_contents.md
             - file: chapter01/intro_example_short.ipynb
             - file: chapter01/intro_example_long.ipynb
         - file: chapter01_c/chapter01_c.md #ch3
@@ -56,7 +58,6 @@ project:
           children:
             - file: chapter05/geometries_in_cuqipy.ipynb
 
-
     - title: "Part II: Inference and Sampling Methods"  
       children:
         - file: chapter01_g/chapter01_g.md #ch7
@@ -70,10 +71,9 @@ project:
           children:
             - file: chapter04/Plugins/CUQIpy-PyTorch/hmc.ipynb
         - file: chapter01_m/chapter01_m.md #ch10
-          children:
-            - file: chapter01_m/chapter01_m_RTO.md
-            - file: chapter01_m/chapter01_MYULA_PNPULA.md
-
+          #children:
+          #  - file: chapter01_m/chapter01_m_RTO.md
+          #  - file: chapter01_m/chapter01_MYULA_PNPULA.md
 
     - title: "Part III: Applications and Research Using CUQIpy"
       children:
@@ -97,7 +97,6 @@ project:
             - file: chapter01_q/chapter01_q_subseapipe.md
             - file: chapter01_q/chapter01_q_ca.md
             - file: chapter01_q/chapter01_q_gp.md
-
         - file: chapter08/chapter08.md #ch15
 site:
   options:
