@@ -1,8 +1,8 @@
 version: 1
 project:
   title: Uncertainty Quantification in Inverse Problems with CUQIpy
-  authors:
-    - name: CUQIpy developer team
+  #authors:
+  #  - name: CUQIpy developer team
   github: CUQI-DTU/CUQI-Book
   thebe:
     binder:
@@ -11,45 +11,94 @@ project:
       ref: master
   bibliography:
     - references.bib
+  numbering: false
   exports:
     - format: pdf
-      template: plain_latex_book
+      template: _templates/plain_latex_nonumbered
       output: exports/book.pdf
+      options:
+        logo: false
   toc:
     - file: intro.md
-    - file: chapter01/chapter01.md
+    - title: "Part I: Foundations of CUQIpy and Bayesian Inverse Problems"
       children:
-        - file: chapter01/overview_of_cuqipy.md
-        - file: chapter01/run_mini_book.md
-        - file: chapter01/intro_example_short.ipynb
-        - file: chapter01/intro_example_long.ipynb
-    - file: chapter02/chapter02.md
+        - file: chapter00/chapter00.md #ch1
+          children:
+            - file: chapter00/section1.md
+            - file: chapter00/section2.md
+            - file: chapter00/section3.md
+            - file: chapter00/section4.md
+            - file: chapter00/section5.md
+        - file: chapter01/chapter01.md #ch1
+          children:
+            - file: chapter01/overview_of_cuqipy.md
+            - file: chapter01/run_mini_book.md
+        - file: chapter01_b/chapter01_b.md #ch2
+          children:
+            - file: chapter01/intro_example_short.ipynb
+            - file: chapter01/intro_example_long.ipynb
+        - file: chapter01_c/chapter01_c.md #ch3
+          children:
+            - file: chapter03/basics_distributions.ipynb
+            - file: chapter02/dist_gallery.ipynb
+            - file: chapter06/markov_random_fields.ipynb
+            - file: chapter01_c/chapter01_c_Random_variables_and_hierarchical_priors.md
+            - file: chapter01_c/chapter01_c_Implicit_priors.md
+            - file: chapter06/entropy.ipynb
+        - file: chapter01_d/chapter01_d.md #ch4
+          children:
+            - file: chapter03/basics_forward_models.ipynb
+            - file: chapter03/basics_forward_UQ.ipynb
+            - file: chapter02/two_forward_problems.ipynb
+        - file: chapter01_e/chapter01_e.md #ch5
+          children:
+            - file: chapter03/basics_bayesian_inverse_problems.ipynb
+            - file: chapter02/two_target_distributions.ipynb
+        - file: chapter01_f/chapter01_f.md #ch6
+          children:
+            - file: chapter05/geometries_in_cuqipy.ipynb
+
+    - title: "Part II: Inference and Sampling Methods"  
       children:
-        - file: chapter02/two_forward_problems.ipynb
-        - file: chapter02/two_target_distributions.ipynb
-    - file: chapter03/chapter03.md
+        - file: chapter01_g/chapter01_g.md #ch7
+          children:
+            - file: chapter07/more_theory_on_sampling_with_cuqipy.ipynb
+        - file: chapter01_h/chapter01_h.md #ch8
+          children:
+            - file: chapter04/gibbs.ipynb
+            - file: chapter01_h/multiple_input.ipynb
+        - file: chapter01_k/chapter01_k.md #ch9
+          children:
+            - file: chapter04/Plugins/CUQIpy-PyTorch/hmc.ipynb
+        - file: chapter01_m/chapter01_m.md #ch10
+          children:
+            - file: chapter01_m/example_rto.ipynb
+            - file: chapter01_m/CUQIpy-FEniCS-example/myula.ipynb
+
+
+    - title: "Part III: Applications and Research Using CUQIpy"
       children:
-        - file: chapter03/basics_distributions.ipynb
-        - file: chapter03/basics_forward_models.ipynb
-        - file: chapter03/basics_bayesian_inverse_problems.ipynb
-    - file: chapter04/chapter04.md
-      children:
-        - file: chapter04/gibbs.ipynb
-        - file: chapter04/Plugins/CUQIpy-CIL/demo_ct.ipynb
-        - file: chapter04/PDE/core_pde.ipynb
-        - file: chapter04/Plugins/CUQIpy-FEniCS/poisson_2D_fenics.ipynb
-        - file: chapter04/Plugins/CUQIpy-PyTorch/hmc.ipynb
-    - file: chapter05/chapter05.md
-      children:
-        - file: chapter05/geometries_in_cuqipy.ipynb
-    - file: chapter06/chapter06.md
-      children:
-        - file: chapter06/markov_random_fields.ipynb
-        - file: chapter06/entropy.ipynb
-    - file: chapter07/chapter07.md
-      children:
-        - file: chapter07/more_theory_on_sampling_with_cuqipy.ipynb
-    - file: chapter08/chapter08.md
+        - file: chapter01_n/chapter01_n.md #ch11
+          children:
+            - file: chapter04/Plugins/CUQIpy-CIL/demo_ct.ipynb
+        - file: chapter01_o/chapter01_o.md #ch12
+          children:
+            - file: chapter04/PDE/core_pde.ipynb
+            - file: chapter04/Plugins/CUQIpy-FEniCS/poisson_2D_fenics.ipynb
+        - file: chapter01_p/chapter01_p.md #ch13
+          children:
+            - file: chapter01_p/chapter01_p_user_show_case.md
+            - file: chapter01_p/chapter01_p_benchmark.md
+        - file: chapter01_q/chapter01_q.md #ch14
+          children:
+            - file: chapter01_q/chapter01_q_part1.md
+            - file: chapter01_q/chapter01_q_part2.md
+            - file: chapter01_q/chapter01_q_implicit.md
+            - file: chapter01_q/chapter01_uq_paper.md
+            - file: chapter01_q/chapter01_q_subseapipe.md
+            - file: chapter01_q/chapter01_q_ca.md
+            - file: chapter01_q/chapter01_q_gp.md
+        - file: chapter08/chapter08.md #ch15
 site:
   options:
     logo: images/logo.png
