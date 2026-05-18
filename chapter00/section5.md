@@ -61,7 +61,7 @@ are *uniformly distributed*
 in the intervals $[8,12]$ and $[0.01,0.25]$, respectively.
 The main role of this prior is to ensure positive estimates, which are
 allowed to take values in wide intervals.
-The two figures below show the samples and the posterior; the red "plus"
+The two figures below show the samples and the posterior; the red dot
 indicates the MAP estimates
 $g_{\hbox{\tiny MAP}} = 9.869$ and $C_{\hbox{\tiny MAP}} = 0.108$.
 Clearly, the estimates for $g$ and $C$ are correlated as evidenced by
@@ -95,7 +95,7 @@ to synthetically generate the data.
 Moreover, the covariance matrix $\Sigma$ is chosen to have large
 variance and thus allowing the estimates to take values in a large range.
 The samples and the posterior are shown in the figure below, where
-the red "plus" indicates the MAP estimates
+the red dot indicates the MAP estimates
 $g_{\hbox{\tiny MAP}} = 9.906$ and $C_{\hbox{\tiny MAP}} = 0.111$.
 
 <figure>
