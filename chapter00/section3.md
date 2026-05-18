@@ -41,10 +41,13 @@ To understand Bayesian inverse problems and the way they are formulated and used
 
 **Data distribution** $\pi(b | x)$. This is a distribution that specifies how likely it is to observe the data $b$ given the parameter or parameter-vector $x$. A key point is that we assume the noisy data can be explained by a forward model (here $b = A\, x$), and therefore the data distribution is conditioned in the variable $x$. The second key point is that we assume a statistical description of the noise, and this assumption informs the specific expression for $\pi(b | x)$.
 
-**Likelihood function** $L(x | b=b_{\mathrm{obs}})$. The likelihood function is the probability density of the data, viewed as a *function of the parameters*, according to the forward model. We obtain the likelihood function from the data distribution by fixing the variable $b$ to be the observed data $b_{\mathrm{obs}}$. As an example, for our linear forward model and with iid Gaussian noise we have
+**Likelihood function** $L(x | b=b_{\mathrm{obs}})$. The likelihood function is the probability density of the data, viewed as a *function of the parameters*, according to the forward model. We obtain the likelihood function from the data distribution by fixing the variable $b$ to be the observed data $b_{\mathrm{obs}}$. As an example, for our linear forward model with iid Gaussian noise of variance $\sigma^2$, where $m=\dim(b)$ is the number of observed data points, the likelihood is
 $$
-    L(x | b=b_{\mathrm{obs}}) \propto
-    \exp\biggl( - \frac{\|A\, x-b_{\mathrm{obs}}\|_2^2}{2\,\sigma^2} \biggr)\ .
+    L(x \mid b=b_{\mathrm{obs}}) = (2\pi\sigma^2)^{-m/2}\,\exp\biggl( - \frac{\|A\, x-b_{\mathrm{obs}}\|_2^2}{2\,\sigma^2} \biggr)\ .
+$$
+We often write the following proportional form (omitting the factor $(2\pi\sigma^2)^{-m/2}$) because that multiplicative constant does not depend on $x$:
+$$
+    L(x \mid b=b_{\mathrm{obs}}) \propto \exp\biggl( - \frac{\|A\, x-b_{\mathrm{obs}}\|_2^2}{2\,\sigma^2} \biggr)\ .
 $$
 
 **Prior $\pi(x).$** This is a distribution function that expresses our knowledge, or belief, about the solution $x$ to the inverse problem. In Bayesian inverse problems it is used to enforce that we prefer solutions that adhere to our prior knowledge, and it plays the same role as the regularization term in classical regularization methods. The prior may be determined from past information or previous experiments, or it can express a subjective assessment of a domain expert [Rob, Chapter 3].
