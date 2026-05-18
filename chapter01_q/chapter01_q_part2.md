@@ -1,6 +1,6 @@
-# CUQIpy – II. Computational uncertainty quantification for PDE-based inverse problems in Python
+# 2. CUQIpy – II. Computational uncertainty quantification for PDE-based inverse problems in Python
 
-## Summary
+## 2.1. Summary
 
 
 
@@ -25,6 +25,6 @@ We present here the results from the Poisson problem example in the paper, Figur
 
 The link to the code for all examples in the paper is provided in the resources section below.
 
-## Resources
+## 2.2. Resources
 - Paper: {cite}`Alghamdi_2024`
 - Paper code GitHub repository: https://github.com/CUQI-DTU/Paper-CUQIpy-2-PDE

@@ -1,6 +1,6 @@
-# Cochlear aqueduct advection and diffusion inferred from computed tomography imaging with a Bayesian approach
+# 6. Cochlear aqueduct advection and diffusion inferred from computed tomography imaging with a Bayesian approach
 
-## Summary
+## 6.1. Summary
 
 Fluid flow and transport of therapeutic agents and pathogenic bacteria into the cochlea has been challenging to study due to its small size and location within bone. In this work, {cite}`Alghamdi2025CochlearAqueduct`, we take advantage of recent non-invasive Computed Tomography (CT) imaging of tracer transport to infer transport parameters in a 1-dimensional advection-diffusion model of the cochlear aqueduct using a Bayesian approach.
 
@@ -18,7 +18,7 @@ We conclude that free diffusion dominates transport of small molecules in the co
 </figcaption>
 </figure>
 
-## Resources
+## 6.2. Resources
 - Paper: {cite}`Alghamdi2025CochlearAqueduct`
 - Paper code GitHub repository: https://github.com/CUQI-DTU/Paper-Cochlear
 
