@@ -1,3 +1,4 @@
+(implicit-paper-summary)=
 # 3. A Computational Framework and Implementation of Implicit Priors in Bayesian Inverse Problems
 
 ## 3.1. Summary
@@ -28,5 +29,4 @@ In all, the paper presents this computational framework and its impact on the im
 ## 3.2. Resources
 - Paper: {cite}`everink2025computational`
 - Paper code GitHub repository: https://github.com/CUQI-DTU/Paper-Implicit
-- Book chapter on implicit priors: [Chapter 11](..//chapter01_m/chapter01_m.md)
-
+- Book chapter on implicit priors: {ref}`implicit-prior-chapter`
