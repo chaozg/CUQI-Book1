@@ -1,6 +1,5 @@
 ---
 numbering:
-  title: true
   headings: true
   equation:
     continue: false
