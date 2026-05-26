@@ -46,6 +46,8 @@ $$
     L(x \mid b=b_{\mathrm{obs}}) = (2\pi\sigma^2)^{-m/2}\,\exp\biggl( - \frac{\|A\, x-b_{\mathrm{obs}}\|_2^2}{2\,\sigma^2} \biggr)\ .
 $$ (eqGL)
 
+We test {eq}`eqGL` here.
+
 We often write the following proportional form (omitting the factor $(2\pi\sigma^2)^{-m/2}$) because that multiplicative constant does not depend on $x$:
 $$
     L(x \mid b=b_{\mathrm{obs}}) \propto \exp\biggl( - \frac{\|A\, x-b_{\mathrm{obs}}\|_2^2}{2\,\sigma^2} \biggr)\ .
