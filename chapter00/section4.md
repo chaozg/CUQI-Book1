@@ -2,7 +2,7 @@
 
 For pedagogical reasons it instructive to consider the special case
 where both the likelihood and the prior are Gaussian. Moreover, this choice is also commonly used in practice. Assuming again a linear forward model $b = A\, x$ and noisy data $b_{\mathrm{obs}}$
-with iid Gaussian noise, the likelihood function is given by \eqref{eq:GL}.
+with iid Gaussian noise, the likelihood function is given by {eq}`eq:GL`.
 For an iid Gaussian prior, in $n=\dim(x)$ dimensions the prior is given exactly by
 $$
     \pi(x) = (2\pi\delta^2)^{-n/2}\,\exp\left( - \frac{\| x \|_2^2}{2\delta^2} \right)\ .

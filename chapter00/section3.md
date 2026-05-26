@@ -44,7 +44,7 @@ To understand Bayesian inverse problems and the way they are formulated and used
 **Likelihood function** $L(x | b=b_{\mathrm{obs}})$. The likelihood function is the probability density of the data, viewed as a *function of the parameters*, according to the forward model. We obtain the likelihood function from the data distribution by fixing the variable $b$ to be the observed data $b_{\mathrm{obs}}$. As an example, for our linear forward model with iid Gaussian noise of variance $\sigma^2$, where $m=\dim(b)$ is the number of observed data points, the likelihood is
 $$
     L(x \mid b=b_{\mathrm{obs}}) = (2\pi\sigma^2)^{-m/2}\,\exp\biggl( - \frac{\|A\, x-b_{\mathrm{obs}}\|_2^2}{2\,\sigma^2} \biggr)\ .
-$$
+$$ (eq:GL)
 We often write the following proportional form (omitting the factor $(2\pi\sigma^2)^{-m/2}$) because that multiplicative constant does not depend on $x$:
 $$
     L(x \mid b=b_{\mathrm{obs}}) \propto \exp\biggl( - \frac{\|A\, x-b_{\mathrm{obs}}\|_2^2}{2\,\sigma^2} \biggr)\ .
