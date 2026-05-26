@@ -1,4 +1,12 @@
-# Chapter 5: Forward models, data generation, and forward UQ
+---
+numbering:
+  title: true
+  headings: true
+  equation:
+    continue: false
+---
 
-> ⚠️ **Contents to be added:** Add intro to the chapter. 
+# Chapter 5: Forward models and the likelihood
+
+> ⚠️ **Contents to be added:** Add intro to the chapter.
 

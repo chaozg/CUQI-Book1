@@ -1,3 +1,11 @@
+---
+numbering:
+  title: true
+  headings: true
+  equation:
+    continue: false
+---
+
 # Chapter 16: Resources and bibliography
 
 ## 1. Resources
