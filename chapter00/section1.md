@@ -15,7 +15,8 @@ It is instructive to illustrate the uncertainty due to data errors with two simp
 **Example 1: Linear regression.** We are given a linear function
 $$f(t) = \alpha\, t + \beta \ ,$$
 where the two parameters $\alpha$ and $\beta$ are unknown. We assume that the noisy data $(t_i,y_i)$, $i=1,2,\ldots,m$ are given by
-$$    y_i = f(t_i) + e_i = \alpha\, t_i + \beta + e_i \qquad
+$$\label{eq:linmodel}
+y_i = f(t_i) + e_i = \alpha\, t_i + \beta + e_i \qquad
     \hbox{with} \qquad e_i \sim \mathcal{N}(0,\sigma^2) \ ,$$
 and our task is to estimate the two unknown parameters. Since the noise is independent and identically distributed (iid) Gaussian with variance $\sigma^2$, it is natural to use the method of least squares estimation [@bjorck2024numerical; @hansen2013least]. The least squares estimates $a_{\hbox{\tiny LS}}$ and $b_{\hbox{\tiny LS}}$ are given by
 $$
@@ -32,7 +33,7 @@ where $\bar{t}$ and $\bar{y}$ are the averages of $t_i$ and $y_i$, respectively.
 </figure>
 
 A statistical approach gives insight about the influence of the noise on the estimated parameters. This least squares estimation problem is linear, it follows that the two estimates follow a bivariate Gaussian distribution $\mathcal{N} (\mu,\Sigma)$, whose mean $\mu = (\alpha,\beta)$ is the vector of the exact parameters. Moreover, the $2 \times 2$ covariance matrix is given by
-$$
+$$ \label{eq:cov}
     \Sigma = \sigma^2 %\bigl(A^TA\bigr)^{-1} =
     \begin{pmatrix} \sum t_i^2 & \sum t_i \\[2mm] \sum t_i & m \end{pmatrix}^{\!-1} =
     \begin{pmatrix}  0.050 & -0.022 \\ -0.022 &  0.013 \end{pmatrix} .
