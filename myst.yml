@@ -11,7 +11,8 @@ project:
       ref: master
   bibliography:
     - references.bib
-  numbering: true
+  numbering:
+    continue: true
   exports:
     - format: pdf
       template: _templates/plain_latex_nonumbered
