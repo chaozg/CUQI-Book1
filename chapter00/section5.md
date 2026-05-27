@@ -53,7 +53,7 @@ there is no simple analytical expression for the posterior.
 We use the test problem from Example 2 with the same Gaussian noise and the same
 parameters, and with two different priors.
 We compute 50,000 samples of the posterior using the
-Metropolis-Hasting sampling method - see Chapter XXX
+Metropolis-Hasting sampling method - see {ref}`sampling-with-cuqipy`
 for a discussion of this sampling method.
 
 The first prior was suggested in @allmaras2013estimating, and we assume that $g$ and $C$
