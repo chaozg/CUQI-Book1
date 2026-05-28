@@ -1,5 +1,7 @@
 # Chapter 16: Resources and bibliography
 
+Following are lists of resources and references for further reading and exploration of CUQIpy and related topics.
+
 ## 1. Resources
 - [CUQIpy documentation](https://cuqi-dtu.github.io/CUQIpy/)
 - [CUQIpy GitHub repository](https://github.com/CUQI-DTU/CUQIpy)
