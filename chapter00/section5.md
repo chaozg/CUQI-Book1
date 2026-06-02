@@ -96,7 +96,7 @@ Moreover, the covariance matrix $\Sigma$ is chosen to have large
 variance and thus allowing the estimates to take values in a large range.
 The samples and the posterior are shown in the figure below, where
 the red dot indicates the MAP estimates
-$g_{\hbox{\tiny MAP}} = 9.906$ and $C_{\hbox{\tiny MAP}} = 0.111$.
+$g_{\hbox{\tiny MAP}} = 9.906$ and $C_{\hbox{\tiny MAP}} = 0.111$ and the orange cross indicates the ground truth $g_{\hbox{\tiny truth}} = 9.816$ and $C_{\hbox{\tiny truth}} = 0.100$.
 
 <figure>
 <img src="figures/samples_truncated_normal_larger_variance.png" alt="figure" width="400"/>
