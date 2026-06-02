@@ -1,19 +1,19 @@
 (section:computational-uq)=
 # 5. Computational UQ: the need for sampling
 
-In some Bayesian inverse problems, the posterior distribution for $x$
+In some Bayesian inverse problems, the posterior for $x$
 is known in closed analytical form.
 However, it may not always be practical to work with: 
 for high-dimensional distributions or when the forward model is computationally
 expensive, it is a computational challenge to compute posterior moments.
-Moreover, in most Bayesian inverse problems the posterior distribution
+Moreover, in most Bayesian inverse problems the posterior
 is not known in analytical form.
 Hence, there is a need for a different way to access the posterior.
 
-A distribution function provides a mathematical description
+A density function provides a mathematical description
 of the behavior of a random variable.
 If we produce many outcomes - or samples - of the random variable $x$
-following the posterior distribution $\pi(x|b_{\mathrm{obs}})$, then
+following the posterior $\pi(x|b_{\mathrm{obs}})$, then
 these samples help us estimate
 where most samples are concentrated and how they are spread out,
 corresponding to high and low density regions of the probability density function,
@@ -35,8 +35,7 @@ Below, we illustrate the concept of sampling with a few simple examples.
 
 **Example 4: Sampling the Gaussian likelihood in the linear regression problem.** We return to the problem from Example 3 with Gaussian noise and a Gaussian prior,
 giving a Gaussian posterior.
-It is instructive to present an example of sampling where we can compare
-the distribution of samples with the analytic posterior distribution function.
+It is instructive to present an example where we can compare samples of the posterior against its analytic density function.
 This is shown in the figure below,
 where the dots are the samples and the background are contour plots of
 the posterior.
@@ -62,7 +61,7 @@ are *uniformly distributed*
 in the intervals $[8,12]$ and $[0.01,0.25]$, respectively.
 The main role of this prior is to ensure positive estimates, which are
 allowed to take values in wide intervals.
-The two figures below show the samples and the posterior; the red "plus"
+The two figures below show the samples and the posterior; the red dot
 indicates the MAP estimates
 $g_{\hbox{\tiny MAP}} = 9.869$ and $C_{\hbox{\tiny MAP}} = 0.108$.
 Clearly, the estimates for $g$ and $C$ are correlated as evidenced by
@@ -96,8 +95,8 @@ to synthetically generate the data.
 Moreover, the covariance matrix $\Sigma$ is chosen to have large
 variance and thus allowing the estimates to take values in a large range.
 The samples and the posterior are shown in the figure below, where
-the red "plus" indicates the MAP estimates
-$g_{\hbox{\tiny MAP}} = 9.906$ and $C_{\hbox{\tiny MAP}} = 0.111$.
+the red dot indicates the MAP estimates
+$g_{\hbox{\tiny MAP}} = 9.906$ and $C_{\hbox{\tiny MAP}} = 0.111$ and the orange cross indicates the ground truth $g_{\hbox{\tiny truth}} = 9.816$ and $C_{\hbox{\tiny truth}} = 0.100$.
 
 <figure>
 <img src="figures/samples_truncated_normal_larger_variance.png" alt="figure" width="400"/>

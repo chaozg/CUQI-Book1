@@ -1,17 +1,17 @@
 # 4. Gaussians priors
 
 For pedagogical reasons it instructive to consider the special case
-where both the likelihood and the prior are Gaussian.
-Assuming again a linear forward model $b = A\, x$ and noisy data $b_{\mathrm{obs}}$
+where both the likelihood and the prior are Gaussian. Moreover, this choice is also commonly used in practice. Assuming again a linear forward model $b = A\, x$ and noisy data $b_{\mathrm{obs}}$
 with iid Gaussian noise, the likelihood function is given by \eqref{eq:GL}.
-Moreover, for an iid Gaussian prior we can write
+For an iid Gaussian prior, in $n=\dim(x)$ dimensions the prior is given exactly by
+$$
+    \pi(x) = (2\pi\delta^2)^{-n/2}\,\exp\left( - \frac{\| x \|_2^2}{2\delta^2} \right)\ .
+$$
+Omitting the normalization constant (which does not depend on $x$) yields the common shorthand
 $$
     \pi(x) \propto \exp\left( - \frac{\| x \|_2^2}{2\delta^2} \right) \ .
 $$
-This prior expresses that we prefer solutions $x$ whose elements
-are not "large" according to the parameter $\delta$ that controls
-the concentration of the prior around the mean (which is zero here).
-The smaller $\delta$ is, the tighter the distribution is around the mean,
+This prior expresses that the elements of $x$ are independent and follow a Gaussian distribution with zero mean and standard deviation $\delta$ that controls the concentration of the prior around the mean (which is zero here). The smaller $\delta$ is, the tighter the density is around the mean,
 meaning the prior favors values of $x$ close to zero;
 conversely, the larger $\delta$ is, the more spread out the prior is,
 suggesting that $x$ could take a wider range of values with higher probability.
