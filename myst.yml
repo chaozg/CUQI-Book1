@@ -12,6 +12,7 @@ project:
   bibliography:
     - references.bib
   numbering:
+    headings: false
     equation:
       continue: true
   exports:
