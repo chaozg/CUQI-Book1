@@ -1,6 +1,5 @@
 ---
 numbering:
-  headings: true
   equation:
     continue: false
 authors:
